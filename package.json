@@ -1,10 +1,9 @@
 {
-  "name": "matrix-component",
+  "name": "react-matrix-component",
   "version": "1.0.0",
   "main": "src/index.js",
   "files": [
-    "src",
-    "styles"
+    "src"
   ],
   "description": "A lightweight React component that renders a flickering matrix-style grid",
   "keywords": ["react", "matrix", "component", "animation", "visual", "frontend"],
