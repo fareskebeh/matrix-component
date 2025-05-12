@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../styles/matrix.css"
 
 const Matrix = () => {
   const [matrix, setMatrix] = useState([]);
@@ -32,18 +31,48 @@ const Matrix = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const styles = {
+    matrix: {
+      pointerEvents: "none",
+      userSelect: "none",
+      color: "white",
+      display: "grid",
+      gridTemplateColumns: "repeat(50, 1fr)",
+      gridTemplateRows: "repeat(30, 1fr)",
+      padding: 0,
+      position: "fixed",
+      zIndex: -20,
+      opacity: 0.44,
+      top: 0,
+      right: 0,
+      left: 0,
+      bottom: 0,
+      backgroundColor: "#101010",
+    },
+    p: {
+      margin: 0,
+      color: "#404040",
+    },
+    diagonal: {
+      color: "#707070",
+    },
+    invisible: {
+      visibility: "hidden",
+    },
+  };
+
   return (
-    <div className="matrix">
+    <div style={styles.matrix}>
       {matrix.map((row, rowIndex) =>
         row.map((value, colIndex) => (
           <p
             key={`${rowIndex}-${colIndex}`}
-            className={
+            style={
               value === "1"
-                ? "diagonal"
+                ? styles.diagonal
                 : value === " "
-                ? "invisible"
-                : ""
+                ? styles.invisible
+                : styles.p
             }
           >
             {value}
