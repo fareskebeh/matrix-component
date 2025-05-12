@@ -9,4 +9,4 @@ A simple and matrix effect component for React. It flickers with `1` and `0` val
 You can install the component via npm:
 
 ```bash
-npm install matrix-component
+npm install react-matrix-component
