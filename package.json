@@ -1,0 +1,19 @@
+{
+  "name": "matrix-component",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "styles"
+  ],
+  "description": "A lightweight React component that renders a flickering matrix-style grid",
+  "keywords": ["react", "matrix", "component", "animation", "visual", "frontend"],
+  "author": "Fares Kebbeh",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  }
+}
